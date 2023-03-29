@@ -155,7 +155,7 @@ body {
   }
   .banner {
     filter: drop-shadow(20px 20px 20px black);
-    background-image: url('../images/spacecraft-82659.gif');
+    background-image: url('../images/space4.gif');
     background-blend-mode: darken;
     background-position: top;
     background-repeat: no-repeat;
