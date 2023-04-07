@@ -93,7 +93,7 @@ body {
 @media (min-width: 420px)
 {
   .nametag,.nametag1{
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 @media (min-width: 425px)
@@ -234,9 +234,18 @@ body {
   .top-contanier{
   /* background-color: #181818; */
     position: relative;
-    top: 10px;
-    padding-top: 70px;
+    top: 100px;
+    /* padding-top: 70px; */
   }
+  @media (max-width:425px)
+  {
+    .top-contanier{
+      top:230px;
+      position: relative;
+    }
+  }
+
+
   .banner {
     filter: drop-shadow(20px 20px 20px black);
     /* background-image: url('../images/space4.gif');s */
