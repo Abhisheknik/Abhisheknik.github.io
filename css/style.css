@@ -1,11 +1,11 @@
 body {
     background-color: #181818;
-    color: #40514E;
     margin: 0;
     width:auto;
     text-align: center;
     font-size: 120%;
   }
+  
   
   header {
     color: #fff;
@@ -20,13 +20,19 @@ body {
     height: 50px;
   }
   
-  .nav ul {
+  nav{
+    height: 50px;
+    width: 100%;
+  }
+/* 
+  nav ul {
     list-style: none;
     margin: 0;
     padding: 0px;
+    float: inline-end;
     
   }
-  
+   */
   nav li {
     display: inline-block;
     margin-right: 20px;
@@ -38,7 +44,75 @@ body {
     font-family: 'Montserrat', sans-serif;
     
   }
+ .checkbtn{
+  color: white;
+  float: right;
+  font-size:30px;
+  line-height: 60px;
+  margin-right:40px ;
+  cursor: pointer;
+  display: none;
+ }
+ #check{
+  display: none;
+ }
+ @media (max-width: 925px)
+{
+  nav ul li a {
+    font-size: 16px;
+  }
+  
+@media (max-width:858px)
+{
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top:80px;
+    left: -100%;  
+    text-align: center;
+    transition: all .5s;
+    
+  }
+  nav ul li{
+    display:  block;
 
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+
+  #check:checked ~ ul{
+    left:0;
+
+  }
+}
+@media (min-width: 420px)
+{
+  .nametag,.nametag1{
+    font-size: 20px;
+  }
+}
+@media (min-width: 425px)
+{
+  .nametag{
+    font-size: 5px;
+  }
+}
+
+@media (min-width:425px)
+{
+  .about__where-ive-been{
+    font-size: 10px;
+  }
+}
+
+
+
+}
   nav a:hover{
     color:#f5deb3;
   }
@@ -62,13 +136,22 @@ body {
     line-height: initial;
     opacity: 1;
     transition-duration: 350ms;
+    display: flex;
+    justify-content: center;
+    align-items:center
   }
    .nametag1{
     text-align: center;
     margin: 0px auto 0 auto;
     color: #f5deb3;
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items:center
     
+  }
+  .card{
+    background-color: #181818;
   }
   
   section h1 {
@@ -151,11 +234,12 @@ body {
   .top-contanier{
   /* background-color: #181818; */
     position: relative;
-    top: -78px;
+    top: 10px;
     padding-top: 70px;
   }
   .banner {
     filter: drop-shadow(20px 20px 20px black);
+    /* background-image: url('../images/space4.gif');s */
     background-blend-mode: darken;
     background-position: top;
     background-repeat: no-repeat;
